@@ -6,32 +6,26 @@ import { BiSolidDish } from "react-icons/bi";
 
 const BottomNav = () => {
     return (
-        /* Increased h-16 to h-20 for a bit more breathing room and added items-center */
-        <div className='fixed bottom-0 left-0 right-0 bg-[#262626] p-2 h-15 flex justify-around items-center border-t border-[#333]'>
+        <div className='fixed bottom-0 left-0 right-0 bg-[#262626] p-2 h-14 flex justify-around items-center border-t border-[#333]'>
             
-            {/* HOME - Active State */}
-            <button className='flex items-center justify-center text-[#f5f5f5] bg-[#343434] w-[200px] h-12 rounded-[20px] border-none cursor-pointer'>
-                <FaHome className="inline mr-2" size={20} /> <p className="font-medium">Home</p>
+            <button className='flex items-center justify-center text-[#f5f5f5] bg-[#343434] w-[140px] h-10 rounded-[15px] border-none cursor-pointer text-sm'>
+                <FaHome className="inline mr-2" size={18} /> <p className="font-medium">Home</p>
             </button>
 
-            {/* ORDERS - Added bg-transparent and border-none to fix the white box */}
-            <button className='flex items-center justify-center text-[#ababab] w-[200px] bg-transparent border-none cursor-pointer hover:text-white'>
-                <MdOutlineReorder className="inline mr-2" size={20} /> <p className="font-medium">Orders</p>
+            <button className='flex items-center justify-center text-[#ababab] w-[140px] bg-transparent border-none cursor-pointer hover:text-white text-sm'>
+                <MdOutlineReorder className="inline mr-2" size={18} /> <p className="font-medium">Orders</p>
             </button>
 
-            {/* TABLES */}
-            <button className='flex items-center justify-center text-[#ababab] w-[200px] bg-transparent border-none cursor-pointer hover:text-white'>
-                <MdTableBar className="inline mr-2" size={20} /> <p className="font-medium">Tables</p>
+            <button className='flex items-center justify-center text-[#ababab] w-[140px] bg-transparent border-none cursor-pointer hover:text-white text-sm'>
+                <MdTableBar className="inline mr-2" size={18} /> <p className="font-medium">Tables</p>
             </button>
 
-            {/* MORE */}
-            <button className='flex items-center justify-center text-[#ababab] w-[200px] bg-transparent border-none cursor-pointer hover:text-white'>
-                <CiCircleMore className="inline mr-2" size={20} /> <p className="font-medium">More</p>
+            <button className='flex items-center justify-center text-[#ababab] w-[140px] bg-transparent border-none cursor-pointer hover:text-white text-sm'>
+                <CiCircleMore className="inline mr-2" size={18} /> <p className="font-medium">More</p>
             </button>
 
-            {/* DISH BUTTON - Added flex, border-none, and set icon size to 28 */}
-            <button className="absolute bottom-6 bg-[#F6B100] text-[#f5f5f5] rounded-full p-3 item-center">
-                <BiSolidDish size={30} />
+            <button className="absolute bottom-4 bg-[#F6B100] text-[#f5f5f5] rounded-full p-2.5 shadow-lg">
+                <BiSolidDish size={24} />
             </button>
         </div>
     );

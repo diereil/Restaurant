@@ -28,3 +28,20 @@ body {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+/* Custom Utilities for Reil's Project */
+@layer utilities {
+  /* Fix for Table Borders */
+  .table-border-fix {
+    border: 1.5px solid #f6b100 !important;
+  }
+
+  /* Fix for Hidden Scrollbar */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
